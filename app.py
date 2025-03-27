@@ -1,6 +1,7 @@
 import streamlit as st
 import fitz  # pymupdf for PDF text extraction
 import faiss
+import os
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from groq import Groq
@@ -9,7 +10,7 @@ from groq import Groq
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 # Initialize Groq API
-GROQ_API_KEY = "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"  # Replace with your actual Groq API key
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]  # Replace with your actual Groq API key
 groq_client = Groq(api_key=GROQ_API_KEY)
 
 # Function to extract text from a PDF
