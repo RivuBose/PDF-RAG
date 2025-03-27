@@ -4,6 +4,5 @@ sentence-transformers
 pypdf
 groq
 --no-cache-dir pymupdf==1.23.3
-fitz
 numpy
 torch
