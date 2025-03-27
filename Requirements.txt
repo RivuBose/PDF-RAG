@@ -1,5 +1,5 @@
 streamlit
-fitz
+pymupdf
 faiss-cpu
 sentence-transformers
 pypdf
