@@ -1,8 +1,11 @@
 import subprocess
 import sys
 
-# Install pymupdf in user space
-subprocess.run([sys.executable, "-m", "pip", "install", "--user", "pymupdf"])
+# Ensure installation inside Streamlit's virtual environment
+subprocess.run([sys.executable, "-m", "pip", "install", "--force-reinstall", "pymupdf"])
+
+ # pymupdf for PDF text extraction
+
 
 # Manually add user site-packages to sys.path
 import site
