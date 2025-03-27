@@ -1,11 +1,18 @@
-import streamlit as st
 import subprocess
 import sys
 
-# Force install pymupdf in the correct environment
-subprocess.run([sys.executable, "-m", "pip", "install", "pymupdf"])
+# Install pymupdf in user space
+subprocess.run([sys.executable, "-m", "pip", "install", "--user", "pymupdf"])
+
+# Manually add user site-packages to sys.path
+import site
+sys.path.append(site.getusersitepackages())
 
 import fitz  # pymupdf for PDF text extraction
+
+
+import streamlit as st
+  # pymupdf for PDF text extraction
 
 
 
