@@ -11,7 +11,7 @@ subprocess.run([sys.executable, "-m", "pip", "install", "--force-reinstall", "py
 import site
 sys.path.append(site.getusersitepackages())
 
-import fitz  # pymupdf for PDF text extraction
+# pymupdf for PDF text extraction
 
 
 import streamlit as st
