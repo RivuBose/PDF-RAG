@@ -3,5 +3,7 @@ faiss-cpu
 sentence-transformers
 pypdf
 groq
+pymupdf
+fitz
 numpy
 torch
