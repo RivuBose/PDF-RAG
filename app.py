@@ -2,14 +2,14 @@ import subprocess
 import sys
 
 # Ensure installation inside Streamlit's virtual environment
-subprocess.run([sys.executable, "-m", "pip", "install", "--force-reinstall", "pymupdf"])
+#subprocess.run([sys.executable, "-m", "pip", "install", "--force-reinstall", "pymupdf"])
 
  # pymupdf for PDF text extraction
 
 
 # Manually add user site-packages to sys.path
-import site
-sys.path.append(site.getusersitepackages())
+#import site
+#sys.path.append(site.getusersitepackages())
 
 # pymupdf for PDF text extraction
 
