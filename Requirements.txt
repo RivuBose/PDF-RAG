@@ -3,7 +3,7 @@ faiss-cpu
 sentence-transformers
 pypdf
 groq
-pymupdf
+pymupdf==1.23.3 
 fitz
 numpy
 torch
