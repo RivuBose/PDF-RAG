@@ -1,5 +1,8 @@
 import streamlit as st
-import fitz  # pymupdf for PDF text extraction
+import subprocess
+subprocess.run(["pip", "install", "pymupdf"])
+import fitz  # Now try importing it
+  # pymupdf for PDF text extraction
 import faiss
 import os
 import numpy as np
