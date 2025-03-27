@@ -1,7 +1,14 @@
 import streamlit as st
 import subprocess
-subprocess.run(["pip", "install", "pymupdf"])
-import fitz  # Now try importing it
+import sys
+
+# Force install pymupdf in the correct environment
+subprocess.run([sys.executable, "-m", "pip", "install", "pymupdf"])
+
+import fitz  # pymupdf for PDF text extraction
+
+
+
   # pymupdf for PDF text extraction
 import faiss
 import os
